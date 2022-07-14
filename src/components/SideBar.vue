@@ -1,4 +1,29 @@
 <template>
+    <h1 class="title is-1 $blue" >
+        stocked.gg
+    </h1>
+    <!-- <div class="logo">
+        <img src="../assets/LogoStocked1.png" alt="Logo Stocked.gg">
+    </div> -->
+    <aside class="menu">
+        <p class="menu-label">
+            General
+        </p>
+        <ul class="menu-list">
+            <li>
+                <RouterLink class="is-active" to="/">
+                    Dashboard
+                </RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/clips">
+                    Clips
+                </RouterLink>
+            </li>
+        </ul>
+    </aside>
+</template>
+<!-- <template>
     <header>
         <h1>
             Stocked.gg
@@ -22,7 +47,7 @@
 
         </nav>
     </header>
-</template>
+</template> -->
 
 <script>
 import { defineComponent } from "vue";
@@ -32,11 +57,5 @@ export default defineComponent({
 
 </script>
 
-<style scoped>
-header {
-    padding: 1rem;
-    background: darkgray;
-    width: 100%;
-    height: 100vh;
-}
+<style>
 </style>
