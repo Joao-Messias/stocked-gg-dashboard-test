@@ -1,54 +1,19 @@
 <template>
-    <h1 class="title is-1 $blue" >
+    <h1 class="title is-1">
         stocked.gg
     </h1>
-    <!-- <div class="logo">
-        <img src="../assets/LogoStocked1.png" alt="Logo Stocked.gg">
-    </div> -->
-    <aside class="menu">
-        <p class="menu-label">
-            General
-        </p>
+    <aside class="menu block">
         <ul class="menu-list">
             <li>
-                <RouterLink class="is-active" to="/">
-                    Dashboard
-                </RouterLink>
+                <RouterLink class="menu-item" to="/"><span class="text">Dashboard</span></RouterLink>
             </li>
             <li>
-                <RouterLink to="/clips">
-                    Clips
+                <RouterLink class="menu-item" to="/clips"><span class="icon"><i class="fas fa-search"></i></span>Clips
                 </RouterLink>
             </li>
         </ul>
     </aside>
 </template>
-<!-- <template>
-    <header>
-        <h1>
-            Stocked.gg
-        </h1>
-        <h2>
-            A Stocked.gg é uma plataforma criada para ajudar pequenos e médios criadores de conteúdo no universo de
-            livestreaming, explorando suas melhores qualidades e fazendo descobertas incríveis através de nossas
-            ferramentas.
-        </h2>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <RouterLink class="navbar-item" to="/">
-                        Dashboard
-                    </RouterLink>
-                    <RouterLink class="navbar-item" to="/clips">
-                        Clips
-                    </RouterLink>
-                </div>
-            </div>
-
-        </nav>
-    </header>
-</template> -->
-
 <script>
 import { defineComponent } from "vue";
 export default defineComponent({
@@ -57,5 +22,21 @@ export default defineComponent({
 
 </script>
 
-<style>
+<style >
+    .block {
+        display: block;
+    }
+    .menu-item {
+        display: block;
+    }
+    .menu-item:hover {
+        background-color: #374151;
+    }
+    .menu-item:focus {
+        background-color: #EAB308;
+    }
+    li {
+        border: 0 solid #374151;
+    }
+    
 </style>
